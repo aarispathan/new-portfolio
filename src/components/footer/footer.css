@@ -1,0 +1,94 @@
+.footer-section {
+    background: #000;
+    padding: 30px 0px;
+    text-align: center;
+    border-top: 1px solid #dfdfdf;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: gray;
+    transition: color 0.3s ease;
+    font-size: 16px;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-section ul {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    margin: 20px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-section ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.footer-section a svg {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.footer-section a:hover svg {
+    transform: scale(1.2);
+}
+
+.footer-section .footer-copy {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #777;
+}
+
+.footer-section .footer-copy .heart-icon {
+    color: #ff0000;
+}
+
+.footer-section .footer-copy .code-icon {
+    color: #2167ff;
+    font-size: 16px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .footer-section {
+        text-align: left;
+        padding: 20px 0px;
+    }
+
+    .footer-section ul {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .footer-section ul li {
+        margin: 10px 0;
+    }
+
+    .footer-section .row {
+        font-size: 1em;
+    }
+
+    .footer-section a svg {
+        margin: 0 10px 0 0;
+    }
+
+    .footer-section .footer-copy {
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,202 @@
+.experience-section {
+    background-color: #000000;
+    padding: 80px 0;
+    color: #f0f0f0;
+    z-index: 1;
+    position: relative;
+}
+
+.experience-section .timeline-card {
+    background-color: #111;
+    border-radius: 16px;
+    padding: 30px 24px;
+    box-shadow: 0 4px 8px #60a5fa80, 0 10px 20px #a78bfa66;
+    border: 1.5px solid #a78bfa;
+    margin: 30px 0 0 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 99;
+    position: relative;
+}
+
+.experience-section .timeline-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 12px #60a5fa88, 0 16px 24px #a78bfa88;
+}
+
+.experience-section .timeline-card h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.experience-section .timeline-card h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #a78bfa;
+    text-align: left;
+}
+
+.experience-section .timeline-card h6 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: #e0e0e0;
+}
+
+.experience-section .timeline-card h6 svg {
+    height: 14px;
+    width: 14px;
+}
+
+.experience-section .timeline-card h3 {
+    color: #000000;
+    background-color: #ffffff;
+    width: max-content;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 24px 0 12px;
+}
+
+.experience-section .timeline-card h3 svg {
+    color: #0073ff;
+}
+
+.experience-section .experience-description {
+    font-size: 0.975rem;
+    color: #cccccc;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+}
+
+.experience-section .timeline-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.experience-section .timeline-content div {
+    color: #99f6e4;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.experience-section .tech-wrapper {
+    background-color: #0f111a;
+    padding: 20px 20px 5px 0px;
+    color: #ffffff;
+}
+
+.experience-section .tech-wrapper h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #d1d5db;
+}
+
+.experience-section .tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.experience-section .tech-tags span {
+    position: relative;
+    padding: 6px 12px;
+    border: 1px solid #4b5563;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #f9fafb;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.experience-section .tech-tags span:hover {
+    background-color: #000000;
+}
+
+.experience-section .tech-tags span:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    animation: shine 1.5s ease-in-out;
+}
+
+@keyframes shine {
+    0% {
+        left: -75%;
+    }
+
+    100% {
+        left: 125%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .experience-section {
+        padding: 40px 0;
+    }
+
+    .experience-section .timeline-card {
+        padding: 24px 16px;
+        margin: 20px 0;
+    }
+
+    .experience-section .timeline-card h4 {
+        font-size: 18px;
+    }
+
+    .experience-section .timeline-card h5 {
+        font-size: 16px;
+    }
+
+    .experience-section .timeline-card h6 {
+        font-size: 14px;
+    }
+
+    .experience-section .experience-description {
+        font-size: 0.9rem;
+    }
+
+    .experience-section .timeline-card h3 {
+        font-size: 14px;
+        padding: 4px 12px;
+    }
+
+    .experience-section .tech-tags span {
+        padding: 3px 10px;
+        font-size: 12px;
+    }
+
+    .experience-section .timeline-content-wrapper {
+        text-align: center;
+        align-items: center;
+    }
+}

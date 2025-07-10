@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Exo 2", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Toastify__toast {
+  font-size: 16px;
+  padding: 0px 16px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Toastify__toast {
+    font-size: 14px !important;
+    padding: 0px !important;
+    width: 70% !important;
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+  }
+
+  .Toastify__toast-container--bottom-center {
+    bottom: 20px !important;
+  }
+}

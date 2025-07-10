@@ -1,0 +1,337 @@
+.project-section {
+    padding: 60px 0;
+    background: #000;
+}
+
+.project-section .project-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.projects-row {
+    margin-bottom: 60px;
+}
+
+.project-section .project-title h1 {
+    font-size: 64px;
+    background: linear-gradient(0deg, #60a5fa 0%, #a78bfa 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.project-section .project-image {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+    border: 2px solid rgb(255, 255, 255, 0.1);
+    border-radius: 1.25rem;
+    display: grid;
+    justify-items: center;
+    align-content: stretch;
+}
+
+.project-section .project-image h2 {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+.project-section .project-image img {
+    width: 100%;
+    height: auto;
+}
+
+.project-section .project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 2.5rem 2rem;
+    border: 1px solid #2a2a2a;
+    border-radius: 1.25rem;
+    background: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.project-section .project-content h2 {
+    font-size: clamp(1.75rem, 1.4vw + 1.5rem, 2.25rem);
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+}
+
+.project-section .project-content h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #38bdf8;
+    margin-bottom: 1rem;
+}
+
+.project-section .project-content p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #000000;
+    max-width: 46ch;
+    margin: 0;
+}
+
+.project-section .project-technologies h4,
+.project-section .project-features h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.75rem;
+}
+
+.project-section .project-features ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.6rem;
+}
+
+.project-section .project-features li {
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+.project-section .project-features li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #22c55e;
+    font-size: 0.85rem;
+}
+
+.project-section .project-technologies .tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-section .project-technologies .tech-tags span {
+    position: relative;
+    padding: 3px 12px;
+    border: 1px solid #2e2e2e;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #000000;
+    background: transparent;
+    overflow: hidden;
+    transition: background-color 0.2s linear;
+}
+
+.project-section .project-technologies .tech-tags span:hover {
+    background: #000;
+    color: #fff;
+}
+
+.project-section .project-technologies .tech-tags span:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    animation: shine 1.5s ease-in-out;
+}
+
+.project-section .project-details .project-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.project-details .project-buttons .button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0.5rem 30px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    background: transparent;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-details .project-buttons .button span {
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-details .project-buttons .icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project-details .project-buttons .button:hover {
+    transform: scale(1.05);
+    border-color: rgba(0, 0, 0);
+}
+
+.project-details .project-buttons .button:hover .icon {
+    transform: translateX(4px);
+}
+
+.project-details .project-buttons .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+
+.project-details .button::before,
+.project-details .tech-tags span:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(0, 0, 0, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .project-section {
+        padding: 40px 0;
+        background: #000;
+    }
+
+    .projects-row {
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .projects-row-one {
+        order: 1;
+    }
+
+    .projects-row-two {
+        order: 2;
+    }
+
+    .projects-row-three {
+        order: 4;
+    }
+
+    .projects-row-four {
+        order: 3;
+    }
+
+    .project-section .project-title {
+        margin-bottom: 40px;
+    }
+
+    .project-section .project-title h1 {
+        font-size: 42px;
+    }
+
+    .project-section .project-image {
+        padding: 0 20px;
+    }
+
+    .project-section .project-details {
+        padding: 20px 20px;
+        gap: 10px;
+    }
+
+    .project-section .project-content h2 {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    .project-section .project-content h4,
+    .project-section .project-technologies h4,
+    .project-section .project-features h4 {
+        font-size: 1rem;
+    }
+
+    .project-section .project-content p,
+    .project-section .project-features li {
+        font-size: 13px;
+    }
+
+    .project-section .project-features li {
+        padding-left: 18px;
+    }
+
+    .project-details .project-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .project-details .project-buttons .button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .project-image,
+    .project-details {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-section .project-image {
+        padding: 15px 0px;
+    }
+
+    .project-section .project-image img {
+        border-radius: 0;
+    }
+
+    .project-section .project-content p {
+        max-width: 100%;
+    }
+
+    .project-section .project-technologies .tech-tags {
+        gap: 6px;
+    }
+
+    .project-section .project-technologies .tech-tags span {
+        padding: 2px 10px;
+        font-size: 13px;
+    }
+
+    .project-details .project-buttons .button {
+        padding: 6px 1.25rem;
+    }
+}
