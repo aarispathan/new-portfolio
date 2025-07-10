@@ -159,6 +159,28 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .experience-section .timeline-card {
+        padding: 20px 16px;
+        margin: 15px 0;
+    }
+
+    .experience-section .experience-description {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .experience-section .timeline-card h3 {
+        margin: 10px 0 !important;
+    }
+
+    .experience-section .tech-wrapper {
+        background-color: #0f111a;
+        padding: 10px 0px 0px 0px;
+        color: #ffffff;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .experience-section {
         padding: 40px 0;
