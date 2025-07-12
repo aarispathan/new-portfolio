@@ -120,7 +120,7 @@ const Preloader = () => {
         setTimeout(() => {
             document.body.classList.remove("loading");
             setHide(true);
-        }, 5200);
+        }, 4800);
     }, [progress]);
 
     if (hide) return null;
