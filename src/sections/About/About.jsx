@@ -28,8 +28,8 @@ function About() {
                                         <li><span>Phone :</span> +91 90549 63110</li>
                                         <li><span>Email :</span> aarispathan15@gmail.com</li>
                                         <li><span>Languages :</span> English, Hindi, Gujarati</li>
-                                        <li><span>Github :</span> <a href="#" className="github-link">Open</a></li>
-                                        <li><span>LinkedIn :</span> <a href="#" className="linkedin-link">Open</a></li>
+                                        <li><span>Github :</span> <a href="https://github.com/aarispathan" target='_blank' className="github-link">Open</a></li>
+                                        <li><span>LinkedIn :</span> <a href="https://www.linkedin.com/in/aaris-pathan-660054277/" target='_blank' className="linkedin-link">Open</a></li>
                                     </ul>
                                 </div>
                                 <div className="stats">

@@ -1,26 +1,23 @@
 import React from 'react';
 import './footer.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import { FaHeart, FaGithub } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaHeart, FaGithub, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineCodeOff } from "react-icons/md";
-import { GoArrowUp } from "react-icons/go";
 
 function Footer() {
     return (
         <footer className="footer-section">
             <Container>
-                
                 <Row className="justify-content-center">
                     <Col className="text-center">
+                        <a href="https://www.instagram.com/aaris_pathan_90/" target='_blank' ><FaInstagram /></a>
+                        <a href="https://github.com/aarispathan" target='_blank' ><FaGithub /></a>
+                        <a href="https://www.linkedin.com/in/aaris-pathan-660054277/" target='_blank' ><FaLinkedinIn /></a>
                         <a href="#"><FaFacebookF /></a>
-                        <a href="#"><FaInstagram /></a>
-                        <a href="#"><FaGithub /></a>
-                        <a href="#"><FaTwitter /></a>
-                        <a href="#"><FaLinkedinIn /></a>
+                        <a href="#"><FaXTwitter /></a>
                     </Col>
                 </Row>
-
                 <Row>
                     <Col>
                         <ul>
@@ -32,7 +29,6 @@ function Footer() {
                         </ul>
                     </Col>
                 </Row>
-
                 <Row>
                     <Col className="text-center">
                         <div className="footer-copy">
@@ -40,7 +36,6 @@ function Footer() {
                         </div>
                     </Col>
                 </Row>
-
             </Container>
         </footer>
     );
