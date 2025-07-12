@@ -171,7 +171,7 @@
     }
 
     .experience-section .timeline-card h3 {
-        margin: 10px 0 !important;
+        margin: 7px 0 !important;
     }
 
     .experience-section .tech-wrapper {
@@ -179,6 +179,15 @@
         padding: 10px 0px 0px 0px;
         color: #ffffff;
     }
+
+    .experience-section .tech-wrapper h4 {
+        margin-bottom: 7px;
+    }
+
+    .experience-section .tech-tags span {
+        padding: 2px 10px 4px 10px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {

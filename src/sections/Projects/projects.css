@@ -227,6 +227,32 @@
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .project-section .project-image h2 {
+        margin-bottom: 30px;
+
+    }
+
+    .project-section .project-image {
+        padding: 30px 0px;
+    }
+
+    .projects-row-one {
+        order: 1;
+    }
+
+    .projects-row-two {
+        order: 2;
+    }
+
+    .projects-row-three {
+        order: 4;
+    }
+
+    .projects-row-four {
+        order: 3;
+    }
+}
 
 @media (max-width: 768px) {
     .project-section {
