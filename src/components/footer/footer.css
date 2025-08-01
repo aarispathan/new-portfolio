@@ -51,11 +51,13 @@
 
 .footer-section .footer-copy .heart-icon {
     color: #ff0000;
+    margin: 0px 2px;
 }
 
 .footer-section .footer-copy .code-icon {
-    color: #2167ff;
+    color: #60a5fa;
     font-size: 16px;
+    margin: 0px 2px;
 }
 
 

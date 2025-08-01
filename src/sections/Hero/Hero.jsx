@@ -62,11 +62,13 @@ function Hero() {
                                     onClick={() => {
                                         document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
                                     }}>
-                                    Contact Now <FiUser className="icon" />
+                                    <span>
+                                        Contact Now <FiUser className="icon" />
+                                    </span>
                                 </button>
                                 <button className='button' onClick={handleDownload}>
                                     <a href="/aarispathan.pdf" download>
-                                        <span>Download CV <RiDownloadLine className='icon' /></span>
+                                        Download CV <RiDownloadLine className='icon' />
                                     </a>
                                 </button>
                             </div>

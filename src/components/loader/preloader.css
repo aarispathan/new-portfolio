@@ -1,141 +1,246 @@
-#preloader {
-    position: fixed;
-    inset: 0;
+.preloader-wrapper {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: #000;
-    overflow: hidden;
-    z-index: 2147483647;
-}
-
-body.loading {
-    overflow: hidden;
+    align-items: center;
     height: 100vh;
 }
 
-#preloader p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 2vh;
-    color: #fff;
-    transition: 1.6s cubic-bezier(.65, .05, 0, 1) transform;
-    overflow: clip;
+.preloader {
+    width: 112px;
+    height: 112px;
+    position: relative;
 }
 
-.loader-percent {
+.box1,
+.box2,
+.box3 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 10vh;
-    background: linear-gradient(90deg, #60a5fa 0%, #a78bfa 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0;
-    animation: fadeIn .8s ease forwards;
+    display: block;
+    box-sizing: border-box;
+
+    border: 16px solid transparent;
+    border-radius: 8px;
+    /* Optional */
+    background-image: linear-gradient(#000, #000), linear-gradient(90deg, #60a5fa, #a78bfa);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+.box1 {
+    width: 112px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 0px;
+    animation: abox1 4s 1s forwards ease-in-out infinite;
 }
 
-.welcome-track {
-    background: linear-gradient(90deg, #60a5fa 0%, #a78bfa 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0;
-    transition: opacity .8s ease;
-    font-size: 14vh;
-    -webkit-transition: opacity .8s ease;
-    -moz-transition: opacity .8s ease;
-    -ms-transition: opacity .8s ease;
-    -o-transition: opacity .8s ease;
+.box2 {
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 0px;
+    animation: abox2 4s 1s forwards ease-in-out infinite;
 }
 
-.welcome-track.show {
-    opacity: 1;
+.box3 {
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 64px;
+    animation: abox3 4s 1s forwards ease-in-out infinite;
 }
 
-@keyframes trackClip {
+@keyframes abox1 {
     0% {
-        clip-path: polygon(0 200%, 100% 200%, 100% 100%, 0 100%);
+        width: 112px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+    }
+
+    12.5% {
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+    }
+
+    25% {
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+    }
+
+    37.5% {
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+    }
+
+    50% {
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+    }
+
+    62.5% {
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+    }
+
+    75% {
+        width: 48px;
+        height: 112px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    87.5% {
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
     100% {
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 }
 
-@keyframes track100Clip {
+@keyframes abox2 {
     0% {
-        clip-path: polygon(0 300%, 100% 300%, 100% 100%, 0 100%);
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    12.5% {
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    25% {
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    37.5% {
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    50% {
+        width: 112px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    62.5% {
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 64px;
+    }
+
+    75% {
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 64px;
+    }
+
+    87.5% {
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 64px;
     }
 
     100% {
-        clip-path: polygon(0 200%, 100% 200%, 100% 100%, 0 100%);
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 64px;
     }
 }
 
-@keyframes track10Clip {
+@keyframes abox3 {
     0% {
-        clip-path: polygon(0 1200%, 100%1200%, 100%100%, 0 100%);
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 64px;
+    }
+
+    12.5% {
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 64px;
+    }
+
+    25% {
+        width: 48px;
+        height: 112px;
+        margin-top: 0px;
+        margin-left: 64px;
+    }
+
+    37.5% {
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 64px;
+    }
+
+    50% {
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 64px;
+    }
+
+    62.5% {
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 64px;
+    }
+
+    75% {
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 64px;
+    }
+
+    87.5% {
+        width: 48px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 64px;
     }
 
     100% {
-        clip-path: polygon(0 1100%, 100%1100%, 100%100%, 0 100%);
-    }
-}
-
-@keyframes track1Clip {
-    0% {
-        clip-path: polygon(0 10200%, 100%10200%, 100%100%, 0 100%);
-    }
-
-    100% {
-        clip-path: polygon(0 10075%, 100%10075%, 100%100%, 0 100%);
-    }
-}
-
-:root {
-    --left: calc(50% - 7.5vh);
-    --right: calc(50% + 7.5vh);
-    --top: 47%;
-    --bottom: 60%;
-}
-
-@keyframes preloaderClip {
-    0% {
-        clip-path: polygon(evenodd, 0 0, 100% 0, 100% 100%, 0 100%,
-                var(--left) var(--bottom), var(--left) var(--top),
-                var(--right) var(--top), var(--right) var(--bottom),
-                var(--left) var(--bottom), 0 100%);
-    }
-
-    100% {
-        clip-path: polygon(evenodd, 0 0, 100% 0, 100% 100%, 0 100%,
-                0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
-    }
-}
-
-@media(max-width:480px) {
-    #preloader p {
-        font-size: 9vh;
-    }
-
-    .loader-percent {
-        font-size: 4.2vh;
-    }
-
-    #preloader p {
-        letter-spacing: -.025em;
-    }
-
-    .welcome-track {
-        font-size: 5vh;
+        width: 112px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
     }
 }

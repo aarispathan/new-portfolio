@@ -72,6 +72,7 @@
 .about-section .personal-info ul li span {
     font-weight: 600;
     color: #f1f1f195;
+    padding: 0;
 }
 
 .about-section .personal-info ul li a {
