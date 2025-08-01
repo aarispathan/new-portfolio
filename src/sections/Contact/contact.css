@@ -121,6 +121,9 @@
     text-decoration: none;
     color: #000000;
     padding: 0;
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
 }
 
 .contact-section .contact-form .icon {
