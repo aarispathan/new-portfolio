@@ -43,7 +43,7 @@ function Header() {
             <Container>
                 <Row>
                     <nav className="navbar">
-                        <div className="logo">
+                        <div onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="logo"  >
                             <img src={AKLogo} alt="Logo" />
                         </div>
                         <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
