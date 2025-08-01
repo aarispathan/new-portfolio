@@ -110,28 +110,40 @@ function Contact() {
           </Col>
         </Row>
         <Row>
-          <Col xl={3} lg={6} md={6} sm={6} className="mb-4">
-            <div className="contact-card">
-              <IoMdMail className='contact-icon' />
-              <h2>Email</h2><p>aarispathan15@gmail.com<br /><span>Send me an email anytime</span></p>
-            </div>
-          </Col>
-          <Col xl={3} lg={6} md={6} sm={6} className="mb-4">
-            <div className="contact-card">
-              <IoCall className='contact-icon' />
-              <h2>Phone</h2><p>+91 90549 63110<br /><span>Call me for urgent matters</span></p>
-            </div>
-          </Col>
-          <Col xl={3} lg={6} md={6} sm={6} className="mb-4">
-            <div className="contact-card">
-              <FaLocationDot className='contact-icon' />
-              <h2>Location</h2><p>Ahmedabad, Gujarat<br /><span>Available for local meetings</span></p>
-            </div>
-          </Col>
-          <Col xl={3} lg={6} md={6} sm={6} className="mb-4">
-            <div className="contact-card">
-              <IoTimeSharp className='contact-icon' />
-              <h2>Availability</h2><p>Within 24 hours<br /><span>Send me an email anytime</span></p>
+          <Col>
+            <div className="stats">
+              <div className="stat-box">
+                <IoMdMail className="contact-icon" />
+                <h2>Email</h2>
+                <p>
+                  aarispathan15@gmail.com<br />
+                  <span>Send me an email anytime</span>
+                </p>
+              </div>
+              <div className="stat-box">
+                <IoCall className="contact-icon" />
+                <h2>Phone</h2>
+                <p>
+                  +91 90549 63110<br />
+                  <span>Call me for urgent matters</span>
+                </p>
+              </div>
+              <div className="stat-box">
+                <FaLocationDot className="contact-icon" />
+                <h2>Location</h2>
+                <p>
+                  Ahmedabad, Gujarat<br />
+                  <span>Available for local meetings</span>
+                </p>
+              </div>
+              <div className="stat-box">
+                <IoTimeSharp className="contact-icon" />
+                <h2>Availability</h2>
+                <p>
+                  Within 24 hours<br />
+                  <span>Send me an email anytime</span>
+                </p>
+              </div>
             </div>
           </Col>
         </Row>
