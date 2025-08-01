@@ -11,18 +11,18 @@ html {
 body {
   scrollbar-width: thin;
   scrollbar-color: #D62929 transparent;
-  background-color: black !important;
+  background-color: black;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
   background-color: transparent;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent !important;
+  background-color: transparent;
   border-radius: 10px;
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 ::-webkit-scrollbar-thumb {
