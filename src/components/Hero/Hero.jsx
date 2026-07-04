@@ -9,7 +9,6 @@ import "./Hero.css";
 
 function Hero({ loading }) {
 
-    /* ================= SCROLL (UP/DOWN MOVEMENT) ================= */
     const { scrollY } = useScroll();
 
     const textY = useTransform(scrollY, [0, 500], [0, -60]);
@@ -20,7 +19,6 @@ function Hero({ loading }) {
     const smoothImageY = useSpring(imageY, { stiffness: 80, damping: 20 });
     const smoothImageScale = useSpring(imageScale, { stiffness: 80, damping: 20 });
 
-    /* ================= MOUSE TILT (ONLY ROTATION) ================= */
     const x = useMotionValue(0);
     const y = useMotionValue(0);
 
@@ -37,7 +35,6 @@ function Hero({ loading }) {
         y.set(yPos);
     };
 
-    /* ================= ENTER ANIMATION ================= */
     const container = {
         hidden: {},
         show: {
@@ -97,7 +94,7 @@ function Hero({ loading }) {
                                     <a href="#projects" className="btn-primary-custom">
                                         View Projects
                                     </a>
-                                    <a href="/aarispathan.pdf" download className="btn-outline-custom">
+                                    <a href="/aaris-pathan.pdf" download className="btn-outline-custom">
                                         Download CV
                                     </a>
                                 </div>
