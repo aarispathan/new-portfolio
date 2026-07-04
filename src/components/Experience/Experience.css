@@ -140,6 +140,10 @@
         left: 20px;
     }
 
+    .timeline-item.left {
+        padding-right: 0;
+    }
+
     .timeline-item {
         width: 100%;
         left: 0 !important;
