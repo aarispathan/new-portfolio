@@ -1,0 +1,33 @@
+/* Make sure the particle background is behind everything */
+.particle-wrapper {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+}
+
+#tsparticles {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+}
+
+/* Give your other components a higher z-index */
+.navbar {
+    position: relative;
+    z-index: 10;
+}
+
+.hero,
+.about,
+.services,
+.projects,
+.contact {
+    position: relative;
+    z-index: 1;
+}

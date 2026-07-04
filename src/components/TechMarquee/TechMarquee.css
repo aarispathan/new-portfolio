@@ -1,0 +1,29 @@
+.tech-marquee {
+    overflow: hidden;
+    padding: 60px 0;
+    position: relative;
+}
+
+.tech-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ff7b00;
+    font-size: 1.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+    text-shadow: 0 0 18px rgba(255, 123, 0, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.tech-marquee:hover .tech-item {
+    transform: translateY(-2px);
+}

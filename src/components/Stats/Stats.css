@@ -1,0 +1,47 @@
+.stats-section {
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.stat-box {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 123, 0, .15);
+    border-radius: 25px;
+    padding: 40px 25px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    transition: .4s ease;
+    height: 100%;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.stat-box:hover {
+    border-color: rgba(255, 123, 0, .4);
+    box-shadow: 0 0 25px rgba(255, 123, 0, .2);
+}
+
+.stat-icon {
+    width: 80px;
+    height: 80px;
+    margin: auto auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--accent);
+    background: rgba(255, 123, 0, .1);
+    font-size: 32px;
+}
+
+.stat-box h2 {
+    color: var(--text-color);
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    color: var(--secondary-text);
+    margin: 0;
+}

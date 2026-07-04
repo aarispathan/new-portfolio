@@ -1,0 +1,170 @@
+.social-dock {
+    position: fixed;
+
+    left: 20px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+/* =========================
+   LINK
+========================= */
+
+.social-dock a {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    background: var(--card-bg);
+
+    border: 1px solid rgba(255, 123, 0, .2);
+
+    backdrop-filter: blur(15px);
+
+    color: var(--text-color);
+
+    transition: all .35s ease;
+}
+
+/* =========================
+   ICON
+========================= */
+
+.social-dock a svg {
+    min-width: 55px;
+
+    font-size: 20px;
+
+    color: var(--accent);
+
+    transition: .3s ease;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.social-dock a span {
+    white-space: nowrap;
+
+    opacity: 0;
+
+    margin-left: 5px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: .3s ease;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.social-dock a:hover {
+    width: 170px;
+
+    border-color: var(--accent);
+
+    background: rgba(255, 123, 0, .08);
+
+    box-shadow:
+        0 0 15px rgba(255, 123, 0, .4),
+        0 0 40px rgba(255, 123, 0, .15);
+}
+
+.social-dock a:hover svg {
+    transform: scale(1.15);
+}
+
+.social-dock a:hover span {
+    opacity: 1;
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+body.light-mode .social-dock a {
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .05);
+}
+
+/* =========================
+   FLOATING ANIMATION
+========================= */
+
+.social-dock a:nth-child(1) {
+    animation: floatIcon 3s ease-in-out infinite;
+}
+
+.social-dock a:nth-child(2) {
+    animation: floatIcon 3s ease-in-out infinite .5s;
+}
+
+.social-dock a:nth-child(3) {
+    animation: floatIcon 3s ease-in-out infinite 1s;
+}
+
+.social-dock a:nth-child(4) {
+    animation: floatIcon 3s ease-in-out infinite 1.5s;
+}
+
+@keyframes floatIcon {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 991px) {
+
+    .social-dock {
+        left: 10px;
+    }
+
+    .social-dock a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-dock a svg {
+        min-width: 50px;
+    }
+}
+
+/* Hide on small devices */
+
+@media (max-width: 768px) {
+
+    .social-dock {
+        display: none;
+    }
+}

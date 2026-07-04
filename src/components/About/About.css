@@ -1,0 +1,144 @@
+.about-section {
+    background: var(--bg-color);
+    position: relative;
+    transition: all .3s ease;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-header span {
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.section-header h2 {
+    font-size: 48px;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.section-header h2 span {
+    color: var(--accent);
+}
+
+.about-text {
+    color: var(--secondary-text);
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.skills-wrapper span {
+    padding: 10px 18px;
+    border-radius: 50px;
+    background: rgba(255, 123, 0, .1);
+    border: 1px solid rgba(255, 123, 0, .2);
+    color: var(--accent);
+    transition: .4s ease;
+}
+
+.skills-wrapper span:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 20px rgba(255, 123, 0, .3);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.stat-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 123, 0, .15);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 35px;
+    text-align: center;
+    transition: .4s ease;
+    will-change: transform;
+    transform-style: preserve-3d;
+}
+
+.stat-card svg {
+    font-size: 40px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.stat-card h3 {
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+.stat-card p {
+    color: var(--secondary-text);
+    margin: 0;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(255, 123, 0, .4);
+
+    box-shadow:
+        0 0 30px rgba(255, 123, 0, .2);
+}
+
+
+body.light-mode .stat-card {
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .05);
+}
+
+
+@media (max-width: 991px) {
+
+    .section-header h2 {
+        font-size: 36px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .skills-wrapper {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 80px 0;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    .stat-card {
+        padding: 25px;
+    }
+
+    .stat-card h3 {
+        font-size: 32px;
+    }
+}
