@@ -1,6 +1,5 @@
 .about-section {
     position: relative;
-    padding: 120px 0;
     background: var(--bg-color);
     overflow: hidden;
 }
