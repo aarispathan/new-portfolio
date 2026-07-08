@@ -38,13 +38,13 @@
     display: inline-block;
     color: var(--accent);
     letter-spacing: 4px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
 }
 
 .section-header h2 {
     font-size: 54px;
-    font-weight: 800;
+    font-weight: 500;
     margin-bottom: 60px;
 }
 
@@ -77,26 +77,18 @@
 }
 
 .skills-wrapper span {
-
     display: flex;
     align-items: center;
-
     padding: 12px 22px;
-
     border-radius: 50px;
-
     font-size: 15px;
     font-weight: 600;
-
     color: var(--accent);
-
     background:
         linear-gradient(145deg,
             rgba(255, 123, 0, .10),
             rgba(255, 123, 0, .04));
-
     border: 1px solid rgba(255, 123, 0, .18);
-
     transition: .35s;
 }
 
