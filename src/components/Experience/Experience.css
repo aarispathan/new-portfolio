@@ -98,13 +98,16 @@
 }
 
 .timeline-type {
-    margin-left: 10px;
     padding: 6px 14px;
     border-radius: 30px;
     background: rgba(255, 123, 0, .12);
     border: 1px solid rgba(255, 123, 0, .25);
     color: var(--accent);
     font-size: 12px;
+}
+
+.experience-section h3 {
+    margin-top: 10px;
 }
 
 .timeline-location {
@@ -118,11 +121,20 @@
 .tech-wrapper h4 {
     color: var(--accent);
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 

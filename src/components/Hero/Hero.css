@@ -177,4 +177,8 @@
     .hero-row {
         min-height: auto;
     }
+
+    .hero-image {
+        margin-top: 50px;
+    }
 }

@@ -37,7 +37,6 @@ function Experience() {
 
     const experiences = [
         {
-            year: "2024",
             type: "Training",
             role: "React.js Developer Training",
             company: "LogicRays Academy",
@@ -52,22 +51,22 @@ function Experience() {
             ],
             technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "React"]
         },
-        {
-            year: "2025 - Present",
-            type: "Full-Time",
-            role: "React.js Developer",
-            company: "Web Studio",
-            location: "Jaipur, Rajasthan",
-            description:
-                "Leading frontend development with scalable UI systems and performance-focused applications.",
-            achievements: [
-                "Built 5+ production apps",
-                "Improved performance by 40%",
-                "Implemented reusable architecture",
-                "CI/CD integration"
-            ],
-            technologies: ["React", "Redux", "Tailwind", "JavaScript"]
-        }
+        // {
+        //     year: "2025 - Present",
+        //     type: "Full-Time",
+        //     role: "React.js Developer",
+        //     company: "Web Studio",
+        //     location: "Jaipur, Rajasthan",
+        //     description:
+        //         "Leading frontend development with scalable UI systems and performance-focused applications.",
+        //     achievements: [
+        //         "Built 5+ production apps",
+        //         "Improved performance by 40%",
+        //         "Implemented reusable architecture",
+        //         "CI/CD integration"
+        //     ],
+        //     technologies: ["React", "Redux", "Tailwind", "JavaScript"]
+        // }
     ];
 
     return (
@@ -111,7 +110,6 @@ function Experience() {
                                 whileHover={{ scale: 1.02 }}
                             >
 
-                                <span className="timeline-year">{item.year}</span>
                                 <span className="timeline-type">{item.type}</span>
 
                                 <h3>{item.role}</h3>
